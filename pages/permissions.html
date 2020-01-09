@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Using GetCraftable">
+    <meta name="keywords" content="Craftable, Research, Using GetCraftable, toolkit, laravel, ">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,900|Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Using Craftable</title>
+  </head>
+  <body>
+
+
+<div class="jumbotron" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8)), url('../images/lagoon.jpg'); height: 350px; background-size: cover; opacity:0.95;">
+  <div class="text-center font-weight-bold mb-3">
+    <a href="index.html" class="text-white m-3">HOME</a>
+    <a href="https://www.getcraftable.com/docs/5.0/overview" class="text-white m-3">DOCS</a>
+  </div>
+  <h1 class="display-4 text-center text-white font-weight-bold">Creating permissions interface in Craftable</h1>
+  <p class="lead text-center text-white">How to generate the permissions interface for your craftable admin panel</p>
+</div>
+
+
+<div class="blog-section">
+  <div class="row">
+
+    <div class="col-md-8">
+      <h5>Step 1</h5>
+      <p>First generate permissions interface in the admin area by typing the command below</p>
+      <code>php artisan admin:generate permissions</code>
+
+      <img src="../images/p1.png" alt="" class="img-fluid">
+
+
+      <p class="mt-3">Then type yes when asked <strong> Do you want to attach generated permissions to the default role now? (yes/no) [yes]: </strong></p>
+
+      <br>
+
+      <h5>Step 2</h5>
+      <p>Run the command <code>npm run dev</code> </p>
+
+      <br>
+
+      <h5>Step 3</h5>
+      <p>Navigate to your admin panel and refresh. the permissions will appear under the <strong>content section.</strong> Image below</p>
+      <img src="../images/p2.png" alt="" class="img-fluid">
+
+      <br>
+
+      <h5 class="mt-3">Step 4</h5>
+      <p>Create a new permission by selecting the new permissions button. (for my example i created a new permission as <strong>admin.latest.permission</strong> with guard name <strong>admin</strong> </p>
+      <img src="../images/p3.png" alt="" class="img-fluid">
+
+      <br>
+
+      <p class="mt-3">I hope it helped</p>
+
+
+
+
+    </div><!-- end of column -->
+
+  </div>
+</div>
+
+
+
+
+
+<footer class="footer mt-auto py-3 bg-dark fixed-bottom">
+  <div class="container text-center ">
+    <span class="text-muted ">Copyright 2020 Using Craftable | apkwatdesign@gmail.com  </span>
+  </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
